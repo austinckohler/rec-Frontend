@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native'
-import AppContainer from './source/navigation/AppNav'
+import HomeScreen from './source/screens/Home/HomeScreen';
+// import AppContainer from './source/navigation/AppNav'
 
 
 export default function App() {
-  return <AppContainer />;
+  return <HomeScreen />;
 }
 // export default function App() {
 //   return (

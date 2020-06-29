@@ -19,6 +19,7 @@
 		5BB8C557A3B414F27A5154D6 /* libPods-capstoneFrontend-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23AD722B79AFBABA2749CF7 /* libPods-capstoneFrontend-tvOSTests.a */; };
 		89D60677D6F7E25ED8E5B896 /* libPods-capstoneFrontend-capstoneFrontendTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B90E8DD3036918097D6B9D /* libPods-capstoneFrontend-capstoneFrontendTests.a */; };
 		A7645511EB5F8468E2682653 /* libPods-capstoneFrontend-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47783294C12D0F7E203CF4F8 /* libPods-capstoneFrontend-tvOS.a */; };
+		D513450B24AA600500225638 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D513450A24AA600400225638 /* GoogleService-Info.plist */; };
 		FD3F03F35AA92F91073D583F /* libPods-capstoneFrontend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD67B42DF7520E5B8A9E0E8 /* libPods-capstoneFrontend.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		A9D492272812EE2F0A73D4DC /* Pods-capstoneFrontend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstoneFrontend.release.xcconfig"; path = "Target Support Files/Pods-capstoneFrontend/Pods-capstoneFrontend.release.xcconfig"; sourceTree = "<group>"; };
 		B82911F77109BA053F25F630 /* Pods-capstoneFrontend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstoneFrontend.debug.xcconfig"; path = "Target Support Files/Pods-capstoneFrontend/Pods-capstoneFrontend.debug.xcconfig"; sourceTree = "<group>"; };
 		C87FCE078BA666032AD154F3 /* Pods-capstoneFrontend-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstoneFrontend-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-capstoneFrontend-tvOS/Pods-capstoneFrontend-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D513450A24AA600400225638 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E23AD722B79AFBABA2749CF7 /* libPods-capstoneFrontend-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-capstoneFrontend-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -134,7 +136,6 @@
 				319766513D1EDE006E30111F /* Pods-capstoneFrontend-tvOSTests.debug.xcconfig */,
 				541FE4B439314DA937BF221B /* Pods-capstoneFrontend-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D513450A24AA600400225638 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* capstoneFrontend */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* capstoneFrontendTests */,
@@ -343,6 +345,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				D513450B24AA600500225638 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,7 +754,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xplorado;
 				PRODUCT_NAME = capstoneFrontend;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -773,7 +776,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xplorado;
 				PRODUCT_NAME = capstoneFrontend;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
